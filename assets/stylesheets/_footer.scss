@@ -1,0 +1,22 @@
+footer{
+    text-align: center;
+    margin:10rem;
+    p{
+        color: grey;
+        small{
+            color:$orange;
+        }
+    }
+}
+
+.social-links{
+    justify-content: center;
+    margin:1rem 0;
+    li{
+        margin:1.2rem;
+        i{
+            color:grey;
+        }
+    }
+}
+

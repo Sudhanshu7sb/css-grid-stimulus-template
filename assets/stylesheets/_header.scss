@@ -1,0 +1,58 @@
+.header{
+    width:100%;
+    position:absolute;
+    padding:1rem;
+    
+    justify-content: space-between;
+    .logo{
+        width:25%;
+        margin-left:15rem;
+        a{
+            color:black;
+            font-size: 2rem;
+            &:hover{
+                color:$orange;
+            }
+        }
+    }
+    .nav{
+        width:45%;
+        .menu-list{
+            justify-content: space-evenly;
+            a{
+                color:black;
+                &:hover{
+                    color:$orange;
+                }
+            }
+        }
+    }
+}
+
+.menu-bars,
+.cross,
+.toggle-menu{
+    display:none;
+}
+
+
+@media screen and (max-width:1050px){
+
+    .header{
+        position: fixed;
+        background:silver;
+    }
+    .logo{
+        margin:1rem !important;
+    }
+    .nav{
+        text-align: right;
+        padding-right:2rem;
+    }
+    .menu-list{
+       display:none;
+    }
+    .menu-bars{
+        display:block;
+    }
+}
