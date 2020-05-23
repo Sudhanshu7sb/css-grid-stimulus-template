@@ -128,6 +128,7 @@ table {
   .header {
     position: fixed;
     background: silver;
+    opacity: 0.8;
   }
   .logo {
     margin: 1rem !important;
@@ -141,6 +142,41 @@ table {
   }
   .menu-bars {
     display: block;
+    position: relative;
+    z-index: 999;
+  }
+  .menu-bars:hover {
+    color: #FC683E;
+  }
+  .toggle-menu:checked + .menu-list {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    background: rgba(240, 240, 240, 0.8);
+    width: 25%;
+    height: 100vh;
+    color: #ECAF4E;
+    top: 0;
+    left: 75%;
+    bottom: 0;
+    right: 0;
+  }
+  .toggle-menu:checked + .menu-list .menu-bars {
+    z-index: 99 !important;
+  }
+  .toggle-menu:checked + .menu-list li {
+    text-align: left !important;
   }
 }
 
